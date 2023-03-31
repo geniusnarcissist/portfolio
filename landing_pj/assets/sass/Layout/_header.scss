@@ -1,0 +1,84 @@
+header {
+  width: 100%;
+  height: 115px;
+  position: relative;
+  z-index: 100;
+  .l-header {
+    max-width: 1360px;
+    width: 100%;
+    padding-top: 15px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .l-header__logo {
+      width: 100px;
+      .l-header__logo__link {
+        display: block;
+      }
+    }
+    .l-header__txt {
+      padding-top: 17px;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      .l-header__txt__nav {
+        padding-right: 70px;
+        font-size: 11px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        .l-header__txt__nav__items {
+          padding-right: 35px;
+          .l-header__txt__nav__items__link {
+            white-space: nowrap;
+            display: block;
+            color: #fff;
+            &.homeLink {
+              color: #ff6300;
+            }
+            &:hover {
+              color: #ff6300;
+            }
+          }
+        }
+      }
+      .l-header__txt__right {
+        font-size: 11px;
+        text-align: end;
+        .l-header__txt__right__items {
+          position: relative;
+          .l-header__txt__right__items__link {
+            padding-right: 5px;
+            white-space: nowrap;
+            display: block;
+            padding-bottom: 5px;
+            position: relative;
+            &.creatorLink {
+              color: #ff6300;
+            }
+            &:hover {
+              color: #ff6300;
+            }
+            &::after {
+              content: "";
+              width: 15px;
+              height: 15px;
+              background: url(../../assets/image/arrow.png) center no-repeat;
+              display: inline-block;
+              background-size: contain;
+              position: absolute;
+              right: -15px;
+              top: 0;
+              z-index: 50;
+            }
+          }
+        }
+      }
+    }
+  }
+}

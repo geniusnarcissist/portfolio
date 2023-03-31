@@ -1,0 +1,37 @@
+.c-main_conTit {
+  margin: 0 auto 11vw;
+  text-align: center;
+  &.cooperation {
+    margin: 0 auto;
+  }
+  .c-main_subTit {
+    margin: 0 auto 1.556em;
+    padding: 0 15px;
+    font-family: "FOT-æ¸…å¾¡éš·æ›¸ä½“ Std R";
+    position: relative;
+    font-weight: normal;
+    font-size: calc(1.6875rem + ((1vw - 3.75px) * 0.4695));
+    min-height: 0vw;
+    line-height: 1.556em;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    z-index: 50;
+    &::before {
+      left: 0;
+    }
+    &::after {
+      right: 0;
+    }
+    &::before,
+    &::after {
+      width: 10px;
+      height: 1px;
+      content: '';
+      position: absolute;
+      top: 50%;
+      display: inline-block;
+      background-color: #fff;
+    }
+  }
+}

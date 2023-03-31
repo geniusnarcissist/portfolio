@@ -1,0 +1,112 @@
+.l-header {
+  width: 100%;
+  height: 70px;
+  background: #f3f2f8;
+  border-bottom: 1px solid #b1b1b180;
+  position: fixed;
+  z-index: 200;
+  .l-header__container {
+    width: 100%;
+    height: 70px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .l-header__container__left {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      .l-header__container__left__logo {
+        margin-right: 5px;
+        font-size: 23px;
+        font-weight: bold;
+      }
+      .l-header__container__left__search {
+        width: 400px;
+        padding: 5px 20px;
+        background: #fff;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        .l-header__container__left__search__input {
+          width: 370px;
+          font-size: 16px;
+        }
+        .l-header__container__left__search__button {
+          width: 30px;
+          height: auto;
+        }
+      }
+    }
+    .l-header__container__right {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      .l-header__container__right__admission {
+        margin: 5px;
+        width: 90%;
+        text-align: end;
+        font-size: 14px;
+      }
+      .l-header__container__right__modal {
+        width: 8%;
+        .l-header__container__right__modal__btn {
+          cursor: pointer;
+          & img {
+            width: auto;
+            max-width: 100%;
+            height: auto;
+          }
+        }
+        .l-header__container__right__modal__container {
+          width: 180px;
+          height: 100px;
+          position: fixed;
+          top: 70px;
+          right: 40px;
+          background-color: #fff;
+          border-radius: 10px;
+          transition: all 1s;
+          z-index: 70;
+          display: none;
+          &.open {
+            display: block;
+          }
+          .l-header__container__right__modal__container__position {
+            position: fixed;
+            z-index: 100;
+          }
+          .l-header__container__right__modal__container__position__items {
+            list-style-type: none;
+            margin: 10px;
+            display: block;
+            width: 100%;
+            font-size: 15px;
+            color: #333;
+            text-decoration: none;
+            &:hover {
+              background: #cccbcb;
+              cursor: pointer;
+            }
+            &.u-darkFlex {
+              display: flex;
+              align-items: center;
+              .l-header__container__right__modal__container__position__items__left{
+              
+              }
+              .l-header__container__right__modal__container__position__items__right {
+                width: 45px;
+                height: 25px;
+                align-items: center;
+                background: #112556;
+                border-radius: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

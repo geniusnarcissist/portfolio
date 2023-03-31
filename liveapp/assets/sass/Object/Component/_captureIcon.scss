@@ -1,0 +1,16 @@
+.c-captureIcon {
+  max-width: 40px;
+  width: 100%;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  .c-captureIcon__img {
+    max-width: 15px;
+    width: 100%;
+    height: auto;
+    margin-right: 3px;
+  }
+  .c-captureIcon__num {
+    font-size: 12px;
+  }
+}

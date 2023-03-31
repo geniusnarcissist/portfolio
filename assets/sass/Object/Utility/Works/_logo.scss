@@ -1,0 +1,27 @@
+.l-header {
+  .l-header__container{
+    .u-logo {
+      color: #000;
+    }
+    .u-list {
+      color: #000;
+      .u-navbtn a {
+        padding: 15px;
+        color: #000;
+      }
+    }
+  }
+}
+
+@media (max-width:800px) {
+  .l-header {
+    .l-header__container{
+      .l-header__container__menu {
+        .l-header__container__menu__btn {
+          background: rgba(246, 114, 224, 0.549);
+          color: #fff;
+        }
+      }
+    }
+  }
+}

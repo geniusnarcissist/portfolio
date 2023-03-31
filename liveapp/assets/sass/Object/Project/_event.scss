@@ -1,0 +1,33 @@
+.p-main__right__event {
+  width: 100%;
+  .p-main__right__event__container {
+    width: calc(100% - 55px);
+    margin: 0 auto;
+    .p-main__right__event__container__area {
+      max-width: 100%;
+      overflow: hidden;
+      .p-main__right__event__container__area__ul {
+        width: 100%;
+        .slick-list {
+          width: inherit;
+          overflow: visible;
+          padding-right: 30px;
+        }
+        .p-main__right__event__container__area__ul__li {
+          &.slick-slide {
+            width: 260px;
+            margin-right: 10px;
+          }
+          .p-main__right__event__container__area__ul__li__a {
+            .p-main__right__event__container__area__ul__li__a__img {
+              max-width: 260px;
+              & img {
+              border-radius: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

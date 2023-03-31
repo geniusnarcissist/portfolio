@@ -1,0 +1,7 @@
+.c-flex {
+  width: 100%;
+  .c-flex__container {
+    width: calc(100% - 55px);
+    margin: 0 auto;
+  } 
+}

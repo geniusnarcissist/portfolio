@@ -1,0 +1,18 @@
+.c-h2__title {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .c-h2__title__size {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2b2745;
+  }
+  .c-h2__title__a {
+    .c-h2__title__a__arrow {
+      max-width: 30px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.c-mainFlex__li__schedule {
+  width: 100%;
+  margin-top: 4px;
+  display: block;
+  text-align: center;
+  .c-mainFlex__li__schedule__time {
+    width: 100%;
+    padding: 3px 0;
+    background: #ff8300;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,25 @@
+.c-conLink {
+  position: relative;
+  &::before {
+    left: -10px;
+  }
+  &::after {
+    right: -10px;
+  }
+  &::before,
+  &::after {
+    content: '';
+    width: 2px;
+    height: 15px;
+    position: relative;
+    display: inline-block;
+    background: url(../../assets/image/icn-line-sp.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.line {
+  text-decoration:underline solid #fff;
+}

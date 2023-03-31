@@ -1,0 +1,35 @@
+.c-materials {
+  margin-bottom: 16vw;
+  text-align: center;
+  .c-materials__txt {
+    padding-left: 2vw;
+    padding-bottom: 65px;
+    font-size: 30px;
+  }
+  .c-materials {
+    width: 100%;
+    .c-materials__btn {
+      padding: 20px 150px 20px 130px;
+      background: #000;
+      border-radius: 70px;
+      border: #ff6300 solid 3px;
+      font-size: 30px;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      &:after {
+        content: "";
+        width: 25px;
+        height: 25px;
+        background: url(../../assets/image/arrow01.png) center no-repeat;
+        display: inline-block;
+        background-size: contain;
+        position: absolute;
+        right: 35px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 50;
+      }
+    }
+  }
+}

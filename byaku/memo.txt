@@ -1,0 +1,11 @@
+省略単語
+bg=background
+con=container
+des=description
+exp=experience
+faci=facilities
+res=reservation
+sec=second
+tit=title
+txt=text
+hos=hospitality

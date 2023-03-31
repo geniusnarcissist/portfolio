@@ -1,0 +1,114 @@
+footer {
+  width: 100%;
+  margin-top: -31.2vw;
+  position: relative;
+  z-index: 60;
+  .l-footer {
+    width: 100%;
+    .l-footer__menu {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      margin-bottom: 6vw;
+      .l-footer__menu__first {
+        display: flex;
+        flex-wrap: nowrap;
+        .l-footer__menu__first__items {
+          margin-right: 40px;
+          .l-footer__menu__first__items__link {
+            font-size: 13px;
+            &:hover {
+              color: #ff6300;
+            }
+            &.footer__materials {
+              color: #ff6300
+            }
+            &.footer__materials:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+      .l-footer__menu__second {
+        display: flex;
+        flex-wrap: wrap;
+        .l-footer__menu__second__items {
+          margin-right: 50px;
+          .l-footer__menu__second__items__link {
+            padding-right: 5px;
+            font-size: 13px;
+            position: relative;
+            &.footer__creator {
+              color: #ff6300
+            }
+            &.footer__creator:hover {
+              color: #fff;
+            }
+            &:hover {
+              color: #ff6300;
+            }
+            &::after {
+              content: "";
+              width: 12px;
+              height: 12px;
+              background: url(../../assets/image/arrow.png) center no-repeat;
+              display: inline-block;
+              background-size: contain;
+              position: absolute;
+              right: -15px;
+              top: 22%;
+              z-index: 50;
+            }
+          }
+        }
+      }
+      .l-footer__menu__third {
+        display: flex;
+        flex-wrap: nowrap;
+        .l-footer__menu__third__items {
+          .l-footer__menu__third__items__link {
+            padding-right: 5px;
+            position: relative;
+            &:hover {
+              color: #ff6300;
+            }
+            &::after {
+              content: "";
+              width: 12px;
+              height: 12px;
+              background: url(../../assets/image/arrow.png) center no-repeat;
+              display: inline-block;
+              background-size: contain;
+              position: absolute;
+              right: -15px;
+              top: 22%;
+              z-index: 50;
+            }
+          }
+        }
+      }
+    }
+    .l-footer__logo {
+      width: 100%;
+      height: 670px;
+      background: #1c1c1c;
+      text-align: center;
+      position: relative;
+      .l-footer__logo__pos {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        .l-footer__logo__pos__img {
+          width: 250px;
+          margin: 0 auto;
+        }
+        .l-footer__logo__pos__cl {
+          margin-top: 15px;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

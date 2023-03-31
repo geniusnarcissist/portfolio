@@ -1,0 +1,16 @@
+.l-header {
+  position: relative;
+  top: 40px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 200;
+  .l-header_logo {
+    margin-left: 50px;
+    width: 137px;
+    height: 19px;
+    position: fixed;
+    z-index: 200;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,19 @@
+.c-main__h3 {
+  align-items: center;
+  height: 30px;
+  .c-main__h3__items {
+    margin-bottom: 50px;
+    font-size: 23px;
+    letter-spacing: 1.3px;
+    background: #000;
+    &::before {
+      content: '';
+      margin-right: 20px;
+      border-left: #ff6300 10px solid;
+      border-radius: 2px;
+    }
+    &.interviewH3 {
+      padding: 0;
+    }
+  }
+}

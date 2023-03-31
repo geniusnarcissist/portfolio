@@ -1,0 +1,119 @@
+.l-header {
+  width: 100%;
+  position: relative;
+  z-index: 50;
+  .l-header__container {
+    width: 100%;
+    margin-top: 25px;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 50;
+    .l-header__container__logo {
+      color: #fff;
+      text-align: center;
+      .l-header__container__logo__top {
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+      }
+      .l-header__container__logo__bottom {
+        letter-spacing: 1.7px;
+        font-size: 14px;
+      }
+    }
+    .l-header__container__list {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      .l-header__container__list__items a {
+        padding: 15px;
+        letter-spacing: 1.7px;
+      }
+      .l-header__container__list__items__button a {
+        padding: 25px;
+        background: #fff;
+        color: rgba(246, 114, 224, 0.549);
+        border-radius: 50px;
+        display: block;
+      }
+    }
+    /* HAMBURGER-MENU */
+    .l-header__container__menu {
+      display: none;
+    }
+    /* HAMBURGER-MENU-END */
+  }
+}
+
+/* RESPONSIVE-800PX */
+@media (max-width:800px) {
+  .l-header {
+    .l-header__container {
+      .l-header__container__logo {
+        width: 50%;
+      }
+      .l-header__container__list {
+        display: none;
+      }
+      .l-header__container__menu {
+        width: 50%;
+        display: block;
+        text-align: center;
+        .l-header__container__menu__btn {
+          width: 140px;
+          margin: 0 auto;
+          padding: 15px 20px;
+          border-radius: 30px;
+          background: #fff;
+          color: rgba(246, 114, 224, 0.549);
+          position: relative;
+          z-index: 50;
+          cursor: pointer;
+          &:hover {
+            background: rgba(244, 244, 244);
+          }
+        }
+        .l-header__container__menu__container {
+          width: 400px;
+          height: 400px;
+          position: fixed;
+          top: -200%;
+          left: 50%;
+          transform: translate(-50%,-200%);
+          z-index: 50;
+          background: linear-gradient(180deg, rgba(21, 155, 154, 0.831) 0%, rgba(246, 114, 224, 0.549) 100%);
+          box-shadow: #ccc 0 0 5px;
+          border-radius: 50%;
+          transition: all 1s;
+          .l-header__container__menu__container__list {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            .l-header__container__menu__container__list__items {
+              list-style-type: none;
+              text-align: center;
+              align-items: center;
+              margin-bottom: 20px;
+              & a {
+                width: 100%;
+                font-size: 30px;
+                color: #fff;
+                font-weight: bold;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+        .active{
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
+/* RESPONSIVE-800PX-END */

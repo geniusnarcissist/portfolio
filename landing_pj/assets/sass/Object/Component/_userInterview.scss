@@ -1,0 +1,109 @@
+.c-userInterview {
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+  .c-userInterview__link {
+    width: 100%;
+    .c-userInterview__link__num {
+      padding: 35px 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: #ff6300;
+    }
+    .c-userInterview__link__flex {
+      width: 100%;
+      padding-left: 2.5vw;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      .c-userInterview__link__flex__company {
+        width: 50%;
+        .c-userInterview__link__flex__company__name {
+          padding-bottom: 25px;
+          font-size: 18px;
+          color: #8f8f8f;
+        }
+        .c-userInterview__link__flex__company__title {
+          padding-bottom: 25px;
+          font-size: 30px;
+        }
+        .c-userInterview__link__flex__company__tag {
+          display: flex;
+          width: 100%;
+          .c-userInterview__link__flex__company__tag__items {
+            margin-right: 10px;
+            padding: 10px 15px;
+            background: #222;
+            border-radius: 20px;
+            font-size: 15px;
+          }
+        }
+      }
+      .c-userInterview__link__flex__right {
+        width: 50%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: end;
+        align-items: center;
+        .c-userInterview__link__flex__right__p {
+          width: 60%;
+          position: relative;
+          line-height: 1.4;
+          letter-spacing: 1.3px;
+          font-size: 16px;
+          color: #aaa;
+          &::before {
+            content: "";
+            width: 25px;
+            height: 25px;
+            background: url(../../assets/image/quotation.png) center no-repeat;
+            display: inline-block;
+            background-size: contain;
+            position: absolute;
+            left: -3vw;
+            top: 0;
+            transform: rotateX(180deg);
+            transform: rotateZ(180deg);
+            z-index: 50;
+          }
+          &::after {
+            content: "";
+            width: 25px;
+            height: 25px;
+            background: url(../../assets/image/quotation.png) center no-repeat;
+            display: inline-block;
+            background-size: contain;
+            position: absolute;
+            right: -2vw;
+            bottom: 0;
+            z-index: 50;
+          }
+        }
+        .c-userInterview__link__flex__right__btn {
+          width: 90px;
+          height: 90px;
+          margin-right: 25px;
+          margin-left: 4vw;
+          border: #ff6300 2px solid;
+          border-radius: 50%;
+          position: relative;
+          &::after {
+            content: "";
+            width: 15px;
+            height: 15px;
+            background: url(../../assets/image/arrow01.png) center no-repeat;
+            display: inline-block;
+            background-size: contain;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 50;
+          }
+        }
+      }
+    }
+  }
+}

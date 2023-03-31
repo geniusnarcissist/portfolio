@@ -1,0 +1,104 @@
+.p-main__right__capture {
+  width: 100%;
+  .p-main__right__capture__container {
+    max-width: calc(100% - 55px);
+    margin: 0 auto;
+    .p-main__right__capture__container__area {
+      max-width: 100%;
+      overflow: hidden;
+      .p-main__right__capture__container__area__ul {
+        width: 100%;
+        display: none;
+        &.slick-initialized {
+          display: block;
+        }
+          &.slick-slider { 
+            width: 100%;
+            .slick-list {
+              width: inherit;
+              overflow: visible;
+              .slick-track {
+                width: inherit;
+                display: flex;
+                align-items: center;
+                .slick-slide {
+                  max-width: 210px;
+                  margin-right: 10px;
+                }
+              }
+            }
+            .slick-prev::before,
+            .slick-next::before {
+              position: relative;
+              font-size: 50px;
+              color: #000000;
+              opacity: 1;
+            }
+            .slick-prev {
+              left: 20px;
+              z-index: 40;
+            }
+            .slick-next {
+              right: 50px;
+              z-index: 20;
+            }
+            .slick-disabled,
+            .slick-disabled {
+              opacity: 0;
+            }
+          }
+        .p-main__right__capture__container__area__ul__li {
+          .p-main__right__capture__container__area__ul__li__a {
+            .p-main__right__capture__container__area__ul__li__a__thumbnail {
+              position: relative;
+              z-index: 50;
+              .p-main__right__capture__container__area__ul__li__a__thumbnail__img {
+                max-width: 210px;
+              }
+              .p-main__right__capture__container__area__ul__li__a__thumbnail__icon {
+                max-width: 210px;
+                padding: 10px;
+                position: absolute;
+                bottom: 0;
+                z-index: 40;
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                .p-main__right__capture__container__area__ul__li__a__thumbnail__icon__img {
+                  max-width: 30px;
+                  margin-right: 5px;
+                }
+                .p-main__right__capture__container__area__ul__li__a__thumbnail__icon__txt {
+                  color: #fff;
+                  font-weight: bold;
+                  .p-main__right__capture__container__area__ul__li__a__thumbnail__icon__txt__name {
+                    font-size: 12px;
+                    color: #fff;
+                  }
+                  .p-main__right__capture__container__area__ul__li__a__thumbnail__icon__txt__gameName {
+                    font-size: 11px;
+                    color: #fff;
+                  }
+                }
+              }
+            }
+            .p-main__right__capture__container__area__ul__li__a__des {
+              padding: 10px;
+              background: #fff;
+              .p-main__right__capture__container__area__ul__li__a__des__title {
+                margin-bottom: 10px;
+                color: #333;
+                font-size: 14px;
+                font-weight: bold;
+              }
+              .p-main__right__capture__container__area__ul__li__a__des__icon {
+                display: flex;
+                flex-wrap: nowrap;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

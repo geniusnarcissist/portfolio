@@ -1,0 +1,42 @@
+.htmlvalue {
+  top: 3%;
+  right: 5%;
+  transform: translate(-5%,-3%);
+}
+.sassvalue {
+  top: 3%;
+  right: 5%;
+  transform: translate(-5%,-3%);
+}
+.jsvalue {
+  top: 3%;
+  right: 14%;
+  transform: translate(-14%,-3%);
+}
+.wpvalue {
+  top: 3%;
+  right: 14%;
+  transform: translate(-14%,-3%);
+}
+.aivalue {
+  top: 3%;
+  right: 42%;
+  transform: translate(-42%,-3%);
+}
+.phvalue {
+  top: 3%;
+  right: 33%;
+  transform: translate(-33%,-3%);
+}
+@media screen and (max-width:450px) {
+  .aivalue {
+    top: 270%;
+    right: 40%;
+    transform: translate(-40%,-270%);
+  }
+  .phvalue {
+    top: 270%;
+    right: 30%;
+    transform: translate(-30%,-270%);
+  }
+}

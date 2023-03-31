@@ -1,0 +1,121 @@
+.p-main__skills {
+  width: 100%;
+  padding: 100px 0;
+  background: linear-gradient(-45deg, #f672e08c 0%, #159b9ad4 100%);
+  color: #fff;
+  .p-main__skills__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5% ;
+    .p-main__skills__container__h3__skills {
+      color: #fff;
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 50px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 1.9px;
+      &::before {
+        content: '';
+        border-top: 1px solid #fff;
+        width: 35px;
+        margin-right: 10px; 
+      }
+    }
+    .p-main__skills__container__contents {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      .p-main__skills__container__contents__items {
+        width: 45%;
+        margin-bottom: 50px;
+        position: relative;
+        &:last-of-type(2) {
+          margin-bottom: 0;
+        }
+        &:last-of-type(1) {
+          margin-bottom: 0;
+        }
+        &:nth-of-type(odd) {
+          margin-right: 5%;
+        }
+        & p:nth-of-type(2) {
+          font-size: 18px;
+          padding-top: 15px;
+          letter-spacing: 2px;
+        }
+      }
+      .p-main__skills__container__contents__items__p {
+        position: relative;
+        padding-left: 30px;
+        z-index: 20;
+        font-size: 20px;
+        padding-bottom: 15px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        &::before {
+          content: '';
+          position: absolute;
+          left: 3px;
+          top: 2px;
+          z-index: 10;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+      .p-main__skills__container__contents__items__tooltip {
+        position: absolute;
+        padding: 5px 8px;
+        border-radius: 5px;
+        font-size: 14px;
+        background: #fff;
+        color: #00d4c0;
+      }
+      .p-main__skills__container__contents__items__container {
+        width: 100%;
+        height: 10px;
+        background: #eaeaea;
+        border-radius: 20px;
+        position: relative;
+        .p-main__skills__container__contents__items__container__bar {
+          height: 10px;
+          background: #34ebd7;
+          border-radius: 20px;
+        }
+        
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1185px) {
+  .p-main__skills {
+    .p-main__skills__container {
+      max-width: 700px;
+      .p-main__skills__container__contents {
+        .p-main__skills__container__contents__items {
+          width: 100%;
+          &:nth-of-type(odd){
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:800px) {
+  .p-main__skills {
+    .p-main__skills__container {
+      .p-main__skills__container__contents {
+        width: 100%;
+        .p-main__skills__container__contents__items {
+          .p-main__skills__container__contents__items__container {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

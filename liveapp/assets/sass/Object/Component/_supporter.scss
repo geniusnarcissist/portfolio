@@ -1,0 +1,35 @@
+.c-supporter {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  .c-supporter__container {
+    width: 20%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    .c-supporter__container__left {
+      width: 64px;
+      height: auto;
+      margin-right: 10px;
+    }
+    .c-supporter__container__right {
+      width: 100%;
+      .c-supporter__container__right__name {
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+      .c-supporter__container__right__flex {
+        display: flex;
+        flex-wrap: nowrap;
+        .c-supporter__container__right__flex__giftIcon {
+          width: 10px;
+        }
+        .c-supporter__container__right__flex__giftNum {
+          font-size: 11px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

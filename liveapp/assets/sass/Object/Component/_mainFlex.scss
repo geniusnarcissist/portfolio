@@ -1,0 +1,66 @@
+.c-mainFlex {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .c-mainFlex__li {
+    width: 24.5%;
+    margin-bottom: 30px;
+    .c-mainFlex__li__thumbnail {
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      .c-mainFlex__li__thumbnail__img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+      }
+      .c-mainFlex__li__thumbnail__logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+      }
+    }
+    .c-mainFlex__li__title {
+      width: 100%;
+      padding: 3px 4px;
+      color: #2b2745;
+      font-size: 14px;
+      font-weight: bold;
+      display: block;
+    }
+    .c-mainFlex__li__gameName {
+      width: 100%;
+      padding: 0 4px 3px;
+      color: #57517a;
+      font-size: 12px;
+    }
+    .c-mainFlex__li__flex {
+      width: 100%;
+      padding: 3px 4px;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      .c-mainFlex__li__flex__viewer {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        color: #57517a;
+        .c-mainFlex__li__flex__viewer__img {
+          width: 15px;
+          margin-right: 5px;
+        }
+        .c-mainFlex__li__flex__viewer__number {
+          color: #57517a;
+        }
+      }
+
+      .c-mainFlex__li__flex__time {
+        color: #57517a;
+      }
+    }
+  }
+}

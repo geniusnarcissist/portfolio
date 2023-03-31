@@ -1,0 +1,39 @@
+.c-category {
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  .c-category__container {
+    width: 24.5%;
+    border-radius: 5px;
+    overflow: hidden;
+    .c-category__container__img {
+      width: 100%;
+      height: auto;
+    }
+    .c-category__container__txt {
+      width: 100%;
+      height: 70px;
+      padding: 8px;
+      background: #fff;
+      position: relative;
+      .c-category__container__txt__name {
+        width: 100%;
+        word-wrap: break-word;
+        font-size: 14px;
+        font-weight: bold;
+        color: #2b2745;
+      }
+      .c-category__container__txt__num {
+        width: 100%;
+        margin: 5px;
+        font-size: 10px;
+        color: #57517a;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.p-fifth {
+  width: 100%;
+  margin-top: 150px;
+  .p-fifth__container {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    .p-fifth__container__top {
+      margin-top: 35px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

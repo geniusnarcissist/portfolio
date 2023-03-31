@@ -1,0 +1,21 @@
+.c-slide_ul {
+  height: 100vh;
+  overflow: hidden;
+  .c-slide_ul_li {
+    height: 100vh;
+    .c-slide_ul_li_img {
+      height: 100vh;
+    }
+  }
+}
+.zoom {
+  animation: zoomUp 20s linear 0s normal both;
+}
+@keyframes zoomUp {
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1.1); /* 拡大率 */
+  }
+}
